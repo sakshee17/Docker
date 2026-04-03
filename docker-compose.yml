@@ -36,7 +36,6 @@ services:
       - trainee_backend
     networks:
       - frontend-net
-      - backend-net
 
   nginx:
     image: nginx:alpine
@@ -49,7 +48,6 @@ services:
       - trainee_backend
     networks:
       - frontend-net
-      - backend-net
 
 volumes:
   frontend_dist:
